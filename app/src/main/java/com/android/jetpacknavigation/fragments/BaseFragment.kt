@@ -20,6 +20,7 @@ abstract class BaseFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         init()
+
     }
 
 }

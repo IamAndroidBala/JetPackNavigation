@@ -40,7 +40,7 @@
     <fragment
         android:id="@+id/photosFragment"
         android:name="com.android.jetpacknavigation.fragments.PhotosFragment"
-        android:label="fragment_photos"
+        android:label="@string/photos"
         tools:layout="@layout/fragment_photos" >
         <argument
             android:name="userText"
@@ -51,13 +51,13 @@
     <fragment
         android:id="@+id/videosFragment"
         android:name="com.android.jetpacknavigation.fragments.VideosFragment"
-        android:label="fragment_videos"
+        android:label="@string/videos"
         tools:layout="@layout/fragment_photos" />
 
     <fragment
         android:id="@+id/musicsFragment"
         android:name="com.android.jetpacknavigation.fragments.MusicsFragment"
-        android:label="fragment_musics"
+        android:label="@string/musics"
         tools:layout="@layout/fragment_photos">
     </fragment>
 

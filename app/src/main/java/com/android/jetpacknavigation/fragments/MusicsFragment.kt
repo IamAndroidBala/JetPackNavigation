@@ -1,26 +1,19 @@
 package com.android.jetpacknavigation.fragments
 
 import com.android.jetpacknavigation.R
+import kotlinx.android.synthetic.main.fragment_photos.*
 
 class MusicsFragment : BaseFragment() {
 
-    override fun contentView(): Int {
-        return R.layout.fragment_photos
-    }
+    override fun contentView()= R.layout.fragment_photos
 
     override fun init() {
 
-        val args : MusicsFragment? = arguments?.let{
-            MusicsFragment.from
+        arguments?.getString("label")?.let {
+            tvTitle.text = arguments?.getString("label")
         }
-
-        args?.let {
-            var text_to_show = tv_fragment_two.text
-            text_to_show = "$text_to_show \nname : ${it.name} \nid : ${it.id}"
-            tv_fragment_two?.text = text_to_show
-        }
-
 
     }
+
 
 }
