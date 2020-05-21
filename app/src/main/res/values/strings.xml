@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">JetPackNavigation</string>
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="musics">Musics</string>
+
 </resources>
